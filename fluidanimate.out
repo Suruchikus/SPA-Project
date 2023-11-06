@@ -1,0 +1,85 @@
+#
+------- NAME OF TOP 20 ROUTINES --------
+#
+_ZNKSt7codecvtIcc11__mbstate_tE16do_always_noconvEv
+_ZNSt13basic_filebufIcSt11char_traitsIcEE6xsgetnEPcl
+_ZNSt13basic_filebufIcSt11char_traitsIcEE6xsputnEPKcl
+_ZNSi4readEPcl
+_ZNSo5writeEPKcl
+_Znam
+_ZdaPv
+__pthread_mutex_init
+__pthread_mutex_destroy
+_ZNSt13basic_filebufIcSt11char_traitsIcEE9underflowEv
+.plt.sec
+rtld_lock_default_lock_recursive
+__gconv_btwoc_ascii
+rtld_lock_default_unlock_recursive
+pthread_cond_broadcast
+_ZNK10__cxxabiv120__si_class_type_info12__do_dyncastElNS_17__class_type_info10__sub_kindEPKS1_PKvS4_S6_RNS1_16__dyncast_resultE
+pthread_mutex_lock
+pthread_mutex_unlock
+__default_morecore
+_IO_file_overflow
+#
+--------- TOP 20 LOADS THAT GENERATES MOST CACHE MISSES ---------
+#
+Name = .plt.sec   Address = 0   Misses = 149
+Name = strcmp   Address = 0   Misses = 117
+Name = dl_main   Address = 7f97daaaf024   Misses = 58
+Name = __GI___printf_fp_l   Address = 7f97c577063b   Misses = 53
+Name = _dl_relocate_object   Address = 7f97daaa25b4   Misses = 52
+Name = _Z7InitSimPKcj   Address = 7f97c618453b   Misses = 50
+Name = do_lookup_x   Address = 7f97daa9d300   Misses = 43
+Name = _dl_map_object_from_fd   Address = 7f97daa9a500   Misses = 40
+Name = _dl_map_object_deps   Address = 7f97daa9733a   Misses = 30
+Name = _int_malloc   Address = 7f97c57a0b4e   Misses = 26
+Name = _Z18ComputeDensitiesMTi   Address = 405a50   Misses = 25
+Name = _Z13RebuildGridMTi   Address = 404db9   Misses = 23
+Name = _Z15ComputeForcesMTi   Address = 406880   Misses = 22
+Name = _Z19ProcessCollisionsMTi   Address = 0   Misses = 22
+Name = .text   Address = 7f97c54eaea0   Misses = 20
+Name = _IO_vfprintf   Address = 7f97c576d9e4   Misses = 18
+Name = _int_free   Address = 7f97c579f850   Misses = 18
+Name = _dl_check_map_versions   Address = 7f97daaa6244   Misses = 17
+Name = _dl_lookup_symbol_x   Address = 7f97daa9de44   Misses = 17
+Name = _Z17InitNeighCellListiiiPi   Address = 0   Misses = 17
+#
+-------- TOP 20 STORES THAT GENERATES MOST CACHE MISSES --------
+#
+Name = _ZNSt6locale5_ImplC2Em   Address = 7f97c616d3d0   Misses = 60
+Name = _Z7InitSimPKcj   Address = 402610   Misses = 53
+Name = dl_main   Address = 7f97daaaf024   Misses = 40
+Name = _ZNSt8ios_base4InitC1Ev   Address = 7f97c616a203   Misses = 24
+Name = _dl_relocate_object   Address = 7f97daaa25b4   Misses = 22
+Name = .text   Address = 7f97c54eaea0   Misses = 21
+Name =    Address = 0   Misses = 19
+Name = do_lookup_x   Address = 7f97daa9d300   Misses = 18
+Name = __GI___printf_fp_l   Address = 7f97c577063b   Misses = 18
+Name = _dl_map_object_from_fd   Address = 7f97daa9a500   Misses = 17
+Name = _int_malloc   Address = 7f97c57a0b4e   Misses = 17
+Name = _dl_important_hwcaps   Address = 7f97daaab144   Misses = 16
+Name = _ZNSt6thread15_M_start_threadESt10shared_ptrINS_10_Impl_baseEE   Address = 7f97c61862a4   Misses = 16
+Name = _dl_map_object_deps   Address = 7f97daa9733a   Misses = 15
+Name = _Z8SaveFilePKc   Address = 4044e0   Misses = 15
+Name = _dl_map_object   Address = 7f97daa9c514   Misses = 14
+Name = _dl_sort_maps   Address = 7f97daaa4d74   Misses = 14
+Name = _dl_new_object   Address = 7f97daa9ffd4   Misses = 13
+Name = _ZNSt11__timepunctIwE23_M_initialize_timepunctEP15__locale_struct   Address = 7f97c617b024   Misses = 13
+Name = sysmalloc   Address = 7f97c57a02a0   Misses = 12
+#
+# DCACHE stats
+#
+# L1 Data Cache:
+# Load-Hits:           2638630121  99.35%
+# Load-Misses:           17181613   0.65%
+# Load-Accesses:       2655811734 100.00%
+# 
+# Store-Hits:           443930691  99.05%
+# Store-Misses:           4251379   0.95%
+# Store-Accesses:       448182070 100.00%
+# 
+# Total-Hits:          3082560812  99.31%
+# Total-Misses:          21432992   0.69%
+# Total-Accesses:      3103993804 100.00%
+

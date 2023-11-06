@@ -1,0 +1,85 @@
+#
+------- NAME OF TOP 20 ROUTINES --------
+#
+getc
+_IO_feof
+_IO_file_underflow
+_IO_file_read
+GOMP_loop_dynamic_next
+GOMP_critical_start
+GOMP_critical_end
+_Znam
+.plt.sec
+_ZdaPv
+omp_get_thread_num
+rtld_lock_default_lock_recursive
+__gconv_btwoc_ascii
+rtld_lock_default_unlock_recursive
+GOMP_loop_end_nowait
+GOMP_loop_dynamic_start
+omp_get_num_threads
+_IO_file_xsputn
+_IO_file_overflow
+_Znwm
+#
+--------- TOP 20 LOADS THAT GENERATES MOST CACHE MISSES ---------
+#
+Name = _Z16FPArray_scan2_DBIhEvP7FP_treeS1_iiT_   Address = 40e270   Misses = 150
+Name = _Z16FPArray_scan2_DBItEvP7FP_treeS1_iiT_   Address = 40eca0   Misses = 133
+Name = .plt.sec   Address = 0   Misses = 120
+Name = strcmp   Address = 0   Misses = 97
+Name = _Z35first_transform_FPTree_into_FPArrayItEvP7FP_treeT_._omp_fn.7   Address = 40ad20   Misses = 93
+Name = _ZN7FP_tree8scan1_DBEiPS_i   Address = 4083e0   Misses = 82
+Name = _Z29transform_FPTree_into_FPArrayIhEvP7FP_treeiT_   Address = 410100   Misses = 66
+Name = _ZN7FP_tree8scan2_DBEi._omp_fn.3   Address = 4043f9   Misses = 65
+Name = _ZN7FP_tree6insertEPiiiii   Address = 407bb0   Misses = 61
+Name = dl_main   Address = 7f9f4accd024   Misses = 58
+Name = _Z32FPArray_conditional_pattern_baseIhEiP7FP_treeiiT_   Address = 0   Misses = 54
+Name = _dl_relocate_object   Address = 7f9f4acc05b4   Misses = 52
+Name = _ZN7FP_tree15database_tilingEi   Address = 405840   Misses = 51
+Name = _ZN7FP_tree9FP_growthEiP5FSout   Address = 409910   Misses = 50
+Name = __GI___printf_fp_l   Address = 7f9f35cec634   Misses = 50
+Name = _ZN7FP_tree15FP_growth_firstEP5FSout._omp_fn.5   Address = 409fa0   Misses = 48
+Name = _ZN7FP_tree15database_tilingEi._omp_fn.0   Address = 7f9f36054983   Misses = 44
+Name = do_lookup_x   Address = 7f9f4acbb300   Misses = 43
+Name = _dl_map_object_from_fd   Address = 7f9f4acb8500   Misses = 42
+Name = omp_in_final   Address = 7f9f360634f4   Misses = 39
+#
+-------- TOP 20 STORES THAT GENERATES MOST CACHE MISSES --------
+#
+Name = _Z16FPArray_scan2_DBIhEvP7FP_treeS1_iiT_   Address = 40e270   Misses = 70
+Name = _ZNSt6locale5_ImplC2Em   Address = 7f9f3636b3d0   Misses = 60
+Name = _ZN7FP_tree4initEiii   Address = 4054f0   Misses = 53
+Name = omp_in_final   Address = 7f9f360634f4   Misses = 50
+Name = .text   Address = 7f9f356d8ea0   Misses = 49
+Name = _ZN7FP_tree15database_tilingEi   Address = 405840   Misses = 48
+Name = _Z16FPArray_scan2_DBItEvP7FP_treeS1_iiT_   Address = 40eca0   Misses = 41
+Name = dl_main   Address = 7f9f4accd024   Misses = 40
+Name = _Z35first_transform_FPTree_into_FPArrayItEvP7FP_treeT_._omp_fn.7   Address = 40ad20   Misses = 38
+Name = _ZN7FP_tree15database_tilingEi._omp_fn.0   Address = 4033b0   Misses = 33
+Name = _ZN7FP_tree6insertEPiiiii   Address = 407bb0   Misses = 33
+Name = _ZN7FP_tree8scan1_DBEP4Data   Address = 407050   Misses = 32
+Name = _ZN4Data13parseDataFileEP7MapFile   Address = 401ee0   Misses = 29
+Name = _Z29transform_FPTree_into_FPArrayIhEvP7FP_treeiT_   Address = 410100   Misses = 28
+Name = _ZN7FP_tree8scan2_DBEi._omp_fn.3   Address = 4043f9   Misses = 24
+Name = _ZN7FP_tree8scan1_DBEiPS_i   Address = 4083e0   Misses = 24
+Name = _dl_relocate_object   Address = 7f9f4acc05b4   Misses = 22
+Name = _ZNSt8ios_base4InitC1Ev   Address = 7f9f36368203   Misses = 22
+Name = main   Address = 401200   Misses = 21
+Name = _ZN7FP_tree15FP_growth_firstEP5FSout._omp_fn.5   Address = 409fa0   Misses = 20
+#
+# DCACHE stats
+#
+# L1 Data Cache:
+# Load-Hits:           4158436597  87.68%
+# Load-Misses:          584572512  12.32%
+# Load-Accesses:       4743009109 100.00%
+# 
+# Store-Hits:          2619054117  88.25%
+# Store-Misses:         348602608  11.75%
+# Store-Accesses:      2967656725 100.00%
+# 
+# Total-Hits:          6777490714  87.90%
+# Total-Misses:         933175120  12.10%
+# Total-Accesses:      7710665834 100.00%
+

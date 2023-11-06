@@ -1,0 +1,85 @@
+#
+------- NAME OF TOP 20 ROUTINES --------
+#
+sincos
+expf64
+logf32x
+__memcpy_avx_unaligned_erms
+_IO_fread
+pthread_mutex_lock
+pthread_mutex_unlock
+_ZN7threads5Mutex4LockEv
+_ZN7threads5Mutex6UnlockEv
+_ZdlPv
+_Znwm
+_IO_file_xsputn
+fwrite
+_IO_file_read
+_ZNK10__cxxabiv120__si_class_type_info12__do_dyncastElNS_17__class_type_info10__sub_kindEPKS1_PKvS4_S6_RNS1_16__dyncast_resultE
+_ZNK10__cxxabiv121__vmi_class_type_info12__do_dyncastElNS_17__class_type_info10__sub_kindEPKS1_PKvS4_S6_RNS1_16__dyncast_resultE
+_IO_file_overflow
+.plt.sec
+_IO_file_write
+pthread_barrier_wait
+#
+--------- TOP 20 LOADS THAT GENERATES MOST CACHE MISSES ---------
+#
+Name = .plt.sec   Address = 0   Misses = 181
+Name = _ZN12BodyGeometry15ComputeGeometryER8BodyPoseR14BodyParameters   Address = 0   Misses = 153
+Name = strcmp   Address = 0   Misses = 137
+Name = _ZN13TrackingModel9OutputBMPERKSt6vectorIfSaIfEEi   Address = 420f50   Misses = 113
+Name = _ZN20TrackingModelPthread4ExecEtj   Address = 44c200   Misses = 95
+Name = __GI___printf_fp_l   Address = 7f911742e634   Misses = 73
+Name = _Z12mainPthreadsNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiiiiib   Address = 442800   Misses = 67
+Name = _ZN16AsyncImageLoader3RunEv   Address = 45dd47   Misses = 59
+Name = dl_main   Address = 7f912d13f024   Misses = 58
+Name = _int_malloc   Address = 7f911745eb10   Misses = 56
+Name = _dl_relocate_object   Address = 7f912d1325b4   Misses = 52
+Name = sincos   Address = 7f91177c29c4   Misses = 48
+Name = do_lookup_x   Address = 7f912d12d300   Misses = 44
+Name = _ZN16AsyncImageLoader7LoadSetERSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS6_EERS0_I11BinaryImageSaISA_EES9_RS0_I9FlexImageIhLi1EESaISF_EE   Address = 45c430   Misses = 42
+Name = _ZN20TrackingModelPthreadD2Ev   Address = 450920   Misses = 42
+Name = _dl_map_object_from_fd   Address = 7f912d1271c9   Misses = 39
+Name = _Z19BetaAnnealingFactorRSt6vectorIfSaIfEEfff   Address = 0   Misses = 38
+Name = _ZNSt6vectorIS_IfSaIfEESaIS1_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS1_S3_EEmRKS1_   Address = 411ea0   Misses = 37
+Name = _ZN12BodyGeometry21IntersectingCylindersER10KTCylinderS1_   Address = 40b4c0   Misses = 35
+Name = __GI_____strtof_l_internal   Address = 7f91174194a4   Misses = 34
+#
+-------- TOP 20 STORES THAT GENERATES MOST CACHE MISSES --------
+#
+Name = _ZN16AsyncImageLoader3RunEv   Address = 45dd47   Misses = 145
+Name = _ZN13TrackingModel9OutputBMPERKSt6vectorIfSaIfEEi   Address = 420f50   Misses = 97
+Name = _Z12mainPthreadsNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiiiiib   Address = 442800   Misses = 64
+Name = _ZNSt6locale5_ImplC2Em   Address = 7f9117bb63d0   Misses = 60
+Name = _ZN13TrackingModel10InitializeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEii   Address = 425790   Misses = 58
+Name = _Z14ProcessCmdLineiPPcRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERiS8_S8_S8_S8_S8_Rb   Address = 43dc39   Misses = 50
+Name = dl_main   Address = 7f912d13f024   Misses = 40
+Name = _ZNSt6vectorIS_IfSaIfEESaIS1_EEaSERKS3_   Address = 445f60   Misses = 39
+Name = _int_malloc   Address = 7f911745eb10   Misses = 36
+Name = _ZNSt6vectorIfSaIfEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPfS1_EEmRKf   Address = 404d99   Misses = 29
+Name = _ZN12BodyGeometry21IntersectingCylindersER10KTCylinderS1_   Address = 40b4c0   Misses = 29
+Name = __GI___printf_fp_l   Address = 7f911742e634   Misses = 27
+Name = _Unwind_GetTextRelBase   Address = 7f91171bc742   Misses = 26
+Name = _ZNSt8ios_base4InitC1Ev   Address = 7f9117bb3203   Misses = 24
+Name = _dl_relocate_object   Address = 7f912d1325b4   Misses = 23
+Name = .text   Address = 7f91171afea0   Misses = 21
+Name = _ZNSt6vectorI12BodyGeometrySaIS0_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS0_S2_EEmRKS0_   Address = 436620   Misses = 20
+Name = _Z21GenerateStDevMatricesiR10PoseParamsRSt6vectorIS1_IfSaIfEESaIS3_EE   Address = 40ff10   Misses = 20
+Name =    Address = 0   Misses = 19
+Name = do_lookup_x   Address = 7f912d12d300   Misses = 18
+#
+# DCACHE stats
+#
+# L1 Data Cache:
+# Load-Hits:           2413509809  94.99%
+# Load-Misses:          127316842   5.01%
+# Load-Accesses:       2540826651 100.00%
+# 
+# Store-Hits:           666358077  98.84%
+# Store-Misses:           7845931   1.16%
+# Store-Accesses:       674204008 100.00%
+# 
+# Total-Hits:          3079867886  95.80%
+# Total-Misses:         135162773   4.20%
+# Total-Accesses:      3215030659 100.00%
+

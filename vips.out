@@ -1,0 +1,85 @@
+#
+------- NAME OF TOP 20 ROUTINES --------
+#
+vips_interpolate_bilinear_interpolate
+wrapone_gen
+pthread_getspecific
+g_private_get_posix_impl
+g_direct_hash
+g_direct_equal
+__strcmp_avx2
+g_str_hash
+g_str_equal
+buf_difflut
+fill_region
+free
+malloc
+cbrtf32x
+process_region
+pthread_mutex_unlock
+pthread_mutex_lock
+pthread_mutex_lock@plt
+pthread_mutex_unlock@plt
+copy_gen
+#
+--------- TOP 20 LOADS THAT GENERATES MOST CACHE MISSES ---------
+#
+Name = ifthenelse_gen   Address = 4984c0   Misses = 92
+Name = strcmp   Address = 0   Misses = 82
+Name = embed_gen   Address = 575210   Misses = 63
+Name = _int_malloc   Address = 7fbdb13c0b4e   Misses = 62
+Name = dl_main   Address = 7fbdc64ae024   Misses = 58
+Name = magazine_cache_push_magazine   Address = 8be8c0   Misses = 55
+Name = _dl_relocate_object   Address = 7fbdc64a15b4   Misses = 51
+Name = .plt.sec   Address = 0   Misses = 49
+Name = im_col_make_tables_RGB   Address = 569ef0   Misses = 49
+Name = im_run_command   Address = 443f80   Misses = 47
+Name = im_gauss_dmask   Address = 5fc0c0   Misses = 47
+Name = _IO_vfprintf   Address = 7fbdb138d9e4   Misses = 46
+Name = conv_gen   Address = 679710   Misses = 46
+Name = _int_free   Address = 7fbdb13bf850   Misses = 41
+Name = xmlParseStartTag2   Address = 729270   Misses = 40
+Name = f64xsubf128   Address = 7fbdb16fbb48   Misses = 39
+Name = lintran_gen   Address = 4f6600   Misses = 39
+Name = _dl_map_object_from_fd   Address = 7fbdc6499500   Misses = 38
+Name = __strcasecmp_l_avx   Address = 0   Misses = 35
+Name = buf_difflut   Address = 0   Misses = 34
+#
+-------- TOP 20 STORES THAT GENERATES MOST CACHE MISSES --------
+#
+Name = g_value_transforms_init   Address = 887dc3   Misses = 53
+Name = dl_main   Address = 7fbdc64ae024   Misses = 41
+Name = _int_malloc   Address = 7fbdb13c0b4e   Misses = 40
+Name = embed_gen   Address = 575210   Misses = 24
+Name = ifthenelse_gen   Address = 4984c0   Misses = 24
+Name = lintra1_gen   Address = 500ef0   Misses = 23
+Name = _dl_relocate_object   Address = 7fbdc64a15b4   Misses = 22
+Name = g_slice_alloc   Address = 8bf2f0   Misses = 22
+Name = __tzfile_read   Address = 7fbdb1411334   Misses = 22
+Name = im_col_make_tables_RGB   Address = 569ef0   Misses = 21
+Name =    Address = 0   Misses = 19
+Name = _IO_vfprintf   Address = 7fbdb138d9e4   Misses = 19
+Name = pthread_create   Address = 7fbdb1a9b4b4   Misses = 19
+Name = _dl_map_object_from_fd   Address = 7fbdc6499500   Misses = 18
+Name = sysmalloc   Address = 7fbdb13c02a0   Misses = 17
+Name = _int_free   Address = 7fbdb13bf850   Misses = 17
+Name = magazine_cache_push_magazine   Address = 8be8c0   Misses = 17
+Name = _dl_important_hwcaps   Address = 7fbdc64aa144   Misses = 16
+Name = g_value_types_init   Address = 888f45   Misses = 16
+Name = im_openin   Address = 44dc90   Misses = 16
+#
+# DCACHE stats
+#
+# L1 Data Cache:
+# Load-Hits:           1741393884  86.20%
+# Load-Misses:          278813411  13.80%
+# Load-Accesses:       2020207295 100.00%
+# 
+# Store-Hits:           947595496  88.07%
+# Store-Misses:         128421475  11.93%
+# Store-Accesses:      1076016971 100.00%
+# 
+# Total-Hits:          2688989380  86.85%
+# Total-Misses:         407234886  13.15%
+# Total-Accesses:      3096224266 100.00%
+

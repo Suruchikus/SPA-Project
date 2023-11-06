@@ -1,0 +1,85 @@
+#
+------- NAME OF TOP 20 ROUTINES --------
+#
+dist_L2_float
+logf32x
+__memcpy_avx_unaligned_erms
+__memset_avx2_unaligned_erms
+f64xsubf128
+_IO_fread
+free
+malloc
+sdist_emd
+jpeg_idct_islow
+fullsize_upsample
+__strdup
+process_data_simple_main
+sep_upsample
+ycc_rgb_convert
+jpeg_idct_16x16
+decode_mcu
+__libc_calloc
+_IO_file_xsputn
+cbrtf32x
+#
+--------- TOP 20 LOADS THAT GENERATES MOST CACHE MISSES ---------
+#
+Name = emd   Address = 417430   Misses = 594
+Name = image_read_rgb_hsv   Address = 0   Misses = 145
+Name = image_segment   Address = 432fb9   Misses = 144
+Name = __GI___printf_fp_l   Address = 7f36f9d9163b   Misses = 97
+Name = image_extract_helper   Address = 431c10   Misses = 94
+Name = LSH_query_bootstrap   Address = 41e940   Misses = 91
+Name = strcmp   Address = 0   Misses = 86
+Name = horizontal.constprop.3   Address = 42abd4   Misses = 82
+Name = _int_malloc   Address = 7f36f9dc1b4e   Misses = 69
+Name = dl_main   Address = 7f370f0a0024   Misses = 58
+Name = sdist_emd   Address = 4143a0   Misses = 52
+Name = _dl_relocate_object   Address = 7f370f0935b4   Misses = 51
+Name = _IO_vfprintf   Address = 7f36f9d8e9e4   Misses = 50
+Name = cass_result_merge_lists   Address = 40a8f0   Misses = 49
+Name = f64xsubf128   Address = 0   Misses = 46
+Name = jpeg_make_d_derived_tbl   Address = 47cc60   Misses = 42
+Name = _dl_map_object_from_fd   Address = 7f370f08b500   Misses = 39
+Name = jinit_master_decompress   Address = 459070   Misses = 36
+Name = .plt.sec   Address = 0   Misses = 33
+Name = _int_free   Address = 7f36f9dc0850   Misses = 32
+#
+-------- TOP 20 STORES THAT GENERATES MOST CACHE MISSES --------
+#
+Name = emd   Address = 417430   Misses = 407
+Name = image_read_rgb_hsv   Address = 42e57c   Misses = 66
+Name = jpeg_make_d_derived_tbl.constprop.0   Address = 47de30   Misses = 59
+Name = jpeg_make_d_derived_tbl   Address = 47cc60   Misses = 55
+Name = image_segment   Address = 432fb9   Misses = 53
+Name = _int_malloc   Address = 7f36f9dc1b4e   Misses = 45
+Name = dl_main   Address = 7f370f0a0024   Misses = 41
+Name = cass_result_merge_lists   Address = 40a8f0   Misses = 36
+Name = __GI___printf_fp_l   Address = 7f36f9d9163b   Misses = 36
+Name = sdist_emd   Address = 4143a0   Misses = 32
+Name = image_extract_helper   Address = 431c10   Misses = 30
+Name = main   Address = 401d90   Misses = 29
+Name = _IO_vfprintf   Address = 7f36f9d8e9e4   Misses = 26
+Name = jinit_master_decompress   Address = 459070   Misses = 23
+Name = LSH_query_bootstrap   Address = 41e940   Misses = 22
+Name = _dl_relocate_object   Address = 7f370f0935b4   Misses = 21
+Name = read_markers   Address = 456240   Misses = 21
+Name = ckh_alloc_table   Address = 4152f0   Misses = 20
+Name = cass_result_alloc_list   Address = 409db0   Misses = 20
+Name =    Address = 0   Misses = 19
+#
+# DCACHE stats
+#
+# L1 Data Cache:
+# Load-Hits:           6463569345  96.52%
+# Load-Misses:          233292891   3.48%
+# Load-Accesses:       6696862236 100.00%
+# 
+# Store-Hits:          6450817257  98.40%
+# Store-Misses:         104852784   1.60%
+# Store-Accesses:      6555670041 100.00%
+# 
+# Total-Hits:         12914386602  97.45%
+# Total-Misses:         338145675   2.55%
+# Total-Accesses:     13252532277 100.00%
+

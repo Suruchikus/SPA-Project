@@ -1,0 +1,85 @@
+#
+------- NAME OF TOP 20 ROUTINES --------
+#
+expf64
+logf32x
+malloc
+free
+_IO_default_xsputn
+.plt.sec
+rtld_lock_default_lock_recursive
+__gconv_btwoc_ascii
+rtld_lock_default_unlock_recursive
+_IO_file_overflow
+_IO_file_xsputn
+_pthread_cleanup_push_defer
+_pthread_cleanup_pop_restore
+_IO_file_write
+__memset_avx2_unaligned_erms
+__fprintf_chk
+_ZNK10__cxxabiv120__si_class_type_info12__do_dyncastElNS_17__class_type_info10__sub_kindEPKS1_PKvS4_S6_RNS1_16__dyncast_resultE
+rtld_malloc
+exp@plt
+rtld_calloc
+#
+--------- TOP 20 LOADS THAT GENERATES MOST CACHE MISSES ---------
+#
+Name = .plt.sec   Address = 0   Misses = 105
+Name = strcmp   Address = 0   Misses = 80
+Name = __GI___printf_fp_l   Address = 7fc8c1c4a634   Misses = 68
+Name = dl_main   Address = 7fc8d6f8a024   Misses = 58
+Name = _dl_relocate_object   Address = 7fc8d6f7d5b4   Misses = 52
+Name = _Z21HJM_Swaption_BlockingPddddddiidS_PS_llii   Address = 40fa20   Misses = 48
+Name = do_lookup_x   Address = 7fc8d6f78300   Misses = 44
+Name = _Z28HJM_SimPath_Forward_BlockingPPdiidS_S_S0_Pli   Address = 406a64   Misses = 44
+Name = _IO_vfprintf   Address = 7fc8c1c479e4   Misses = 41
+Name = _dl_map_object_from_fd   Address = 7fc8d6f75500   Misses = 40
+Name = _int_malloc   Address = 7fc8c1c7ab4e   Misses = 38
+Name = main   Address = 0   Misses = 34
+Name = _dl_map_object_deps   Address = 7fc8d6f7233a   Misses = 30
+Name = _Z10HJM_DriftsPdPS_iidS0_   Address = 4089ba   Misses = 29
+Name = _int_free   Address = 7fc8c1c79850   Misses = 26
+Name = f64xsubf128   Address = 7fc8c21e6b48   Misses = 23
+Name = _Z25Discount_Factors_BlockingPdidS_i   Address = 7fc8c1c787fd   Misses = 22
+Name = .text   Address = 7fc8c19c6ea0   Misses = 20
+Name = _dl_check_map_versions   Address = 7fc8d6f81244   Misses = 17
+Name = _dl_lookup_symbol_x   Address = 7fc8d6f78e44   Misses = 17
+#
+-------- TOP 20 STORES THAT GENERATES MOST CACHE MISSES --------
+#
+Name = _ZNSt6locale5_ImplC2Em   Address = 7fc8c26443d0   Misses = 60
+Name = dl_main   Address = 7fc8d6f8a024   Misses = 40
+Name = _int_malloc   Address = 7fc8c1c7ab4e   Misses = 25
+Name = __GI___printf_fp_l   Address = 7fc8c1c4a634   Misses = 25
+Name = _dl_relocate_object   Address = 7fc8d6f7d5b4   Misses = 23
+Name = _ZNSt8ios_base4InitC1Ev   Address = 7fc8c2641203   Misses = 22
+Name = .text   Address = 7fc8c19c6ea0   Misses = 21
+Name = _Z25Discount_Factors_BlockingPdidS_i   Address = 40e6bd   Misses = 20
+Name =    Address = 0   Misses = 19
+Name = main   Address = 400c90   Misses = 19
+Name = do_lookup_x   Address = 7fc8d6f78300   Misses = 18
+Name = _dl_map_object_from_fd   Address = 7fc8d6f75500   Misses = 17
+Name = _IO_vfprintf   Address = 7fc8c1c479e4   Misses = 17
+Name = _dl_important_hwcaps   Address = 7fc8d6f86144   Misses = 16
+Name = _ZNSt6thread15_M_start_threadESt10shared_ptrINS_10_Impl_baseEE   Address = 7fc8c265d2a4   Misses = 16
+Name = pthread_create   Address = 7fc8c1fae4b4   Misses = 16
+Name = _dl_map_object_deps   Address = 7fc8d6f7233a   Misses = 15
+Name = _Z21HJM_Swaption_BlockingPddddddiidS_PS_llii   Address = 40fa20   Misses = 15
+Name = _dl_map_object   Address = 7fc8d6f77514   Misses = 14
+Name = _dl_sort_maps   Address = 7fc8d6f7fd74   Misses = 14
+#
+# DCACHE stats
+#
+# L1 Data Cache:
+# Load-Hits:           7631490274  99.04%
+# Load-Misses:           73920035   0.96%
+# Load-Accesses:       7705410309 100.00%
+# 
+# Store-Hits:          1977338482  95.51%
+# Store-Misses:          92947197   4.49%
+# Store-Accesses:      2070285679 100.00%
+# 
+# Total-Hits:          9608828756  98.29%
+# Total-Misses:         166867232   1.71%
+# Total-Accesses:      9775695988 100.00%
+

@@ -1,0 +1,85 @@
+#
+------- NAME OF TOP 20 ROUTINES --------
+#
+__memcmp_avx2_movbe
+_Znwm
+_ZdlPv
+__memcpy_avx_unaligned_erms
+_ZNK10__cxxabiv121__vmi_class_type_info12__do_dyncastElNS_17__class_type_info10__sub_kindEPKS1_PKvS4_S6_RNS1_16__dyncast_resultE
+_ZStrsIcSt11char_traitsIcESaIcEERSt13basic_istreamIT_T0_ES7_RNSt7__cxx1112basic_stringIS4_S5_T1_EE
+_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7compareEPKc
+expf64
+_ZNKSt7num_getIcSt19istreambuf_iteratorIcSt11char_traitsIcEEE6do_getES3_S3_RSt8ios_baseRSt12_Ios_IostateRl
+_ZSt29_Rb_tree_insert_and_rebalancebPSt18_Rb_tree_node_baseS0_RS_
+_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_assignERKS4_
+_ZNSirsERi
+_ZSt18_Rb_tree_incrementPSt18_Rb_tree_node_base
+_ZSt18_Rb_tree_decrementPSt18_Rb_tree_node_base
+_ZNSt13basic_filebufIcSt11char_traitsIcEE9underflowEv
+_ZNKSt7codecvtIcc11__mbstate_tE16do_always_noconvEv
+__default_morecore
+.plt.sec
+rtld_lock_default_lock_recursive
+__gconv_btwoc_ascii
+#
+--------- TOP 20 LOADS THAT GENERATES MOST CACHE MISSES ---------
+#
+Name = .plt.sec   Address = 0   Misses = 148
+Name = strcmp   Address = 0   Misses = 120
+Name = dl_main   Address = 7f8861d47024   Misses = 58
+Name = _int_malloc   Address = 7f884c9b4b4e   Misses = 54
+Name = _dl_relocate_object   Address = 7f8861d3a5b4   Misses = 52
+Name = __GI___printf_fp_l   Address = 7f884c98463b   Misses = 49
+Name = do_lookup_x   Address = 7f8861d35300   Misses = 43
+Name = _dl_map_object_from_fd   Address = 7f8861d32500   Misses = 40
+Name = _ZN15annealer_thread3RunEv   Address = 0   Misses = 37
+Name = _ZN3Rng4randEi   Address = 409f60   Misses = 34
+Name = _int_free   Address = 7f884c9b3850   Misses = 32
+Name = _dl_map_object_deps   Address = 7f8861d2f33a   Misses = 30
+Name = _ZN7netlist24create_elem_if_necessaryERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE   Address = 404c60   Misses = 27
+Name = _ZN3Rng5drandEv   Address = 40b140   Misses = 25
+Name = f64xsubf128   Address = 7f884cf1fb48   Misses = 25
+Name = _ZN7netlistC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE   Address = 7f884d36ad54   Misses = 24
+Name = .text   Address = 7f884c700ea0   Misses = 20
+Name = _ZNSt6vectorIS_I10location_tSaIS0_EESaIS2_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS2_S4_EEmRKS2_   Address = 4080e0   Misses = 20
+Name = _dl_check_map_versions   Address = 7f8861d3e244   Misses = 18
+Name = _IO_vfprintf   Address = 7f884c9819e4   Misses = 18
+#
+-------- TOP 20 STORES THAT GENERATES MOST CACHE MISSES --------
+#
+Name = _ZNSt6locale5_ImplC2Em   Address = 7f884d37e3d0   Misses = 60
+Name = dl_main   Address = 7f8861d47024   Misses = 40
+Name = _int_malloc   Address = 7f884c9b4b4e   Misses = 33
+Name = _ZN7netlistC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE   Address = 4054c3   Misses = 33
+Name = _ZNSt8ios_base4InitC1Ev   Address = 7f884d37b203   Misses = 24
+Name = __GI___printf_fp_l   Address = 7f884c98463b   Misses = 23
+Name = _dl_relocate_object   Address = 7f8861d3a5b4   Misses = 22
+Name = .text   Address = 7f884c700ea0   Misses = 21
+Name =    Address = 0   Misses = 19
+Name = do_lookup_x   Address = 7f8861d35300   Misses = 18
+Name = _dl_map_object_from_fd   Address = 7f8861d32500   Misses = 17
+Name = _ZN15annealer_thread3RunEv   Address = 402b20   Misses = 17
+Name = _dl_important_hwcaps   Address = 7f8861d43144   Misses = 16
+Name = _ZNSt6thread15_M_start_threadESt10shared_ptrINS_10_Impl_baseEE   Address = 7f884d3972a4   Misses = 16
+Name = _ZN7netlist24create_elem_if_necessaryERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE   Address = 404c60   Misses = 16
+Name = _dl_map_object_deps   Address = 7f8861d2f33a   Misses = 15
+Name = main   Address = 401fa0   Misses = 15
+Name = _dl_map_object   Address = 7f8861d34514   Misses = 14
+Name = _dl_sort_maps   Address = 7f8861d3cd74   Misses = 14
+Name = _dl_new_object   Address = 7f8861d37fd4   Misses = 13
+#
+# DCACHE stats
+#
+# L1 Data Cache:
+# Load-Hits:           1784125330  92.46%
+# Load-Misses:          145572531   7.54%
+# Load-Accesses:       1929697861 100.00%
+# 
+# Store-Hits:           671184847  99.11%
+# Store-Misses:           6061056   0.89%
+# Store-Accesses:       677245903 100.00%
+# 
+# Total-Hits:          2455310177  94.18%
+# Total-Misses:         151633587   5.82%
+# Total-Accesses:      2606943764 100.00%
+

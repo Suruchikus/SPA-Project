@@ -1,0 +1,85 @@
+#
+------- NAME OF TOP 20 ROUTINES --------
+#
+_ZNK7PhysBAM20DIAGONALIZED_FACE_3DIfE10dP_From_dFERKNS_10MATRIX_3X3IfEERKNS_19DIAGONAL_MATRIX_3X3IfEES5_RKNS_43DIAGONALIZED_ISOTROPIC_STRESS_DERIVATIVE_3DIfEEfi
+logf32x
+_ZNSt13basic_filebufIcSt11char_traitsIcEE6xsgetnEPcl
+_ZNSi4readEPcl
+_Znam
+_ZdaPv
+_ZNKSt7codecvtIcc11__mbstate_tE16do_always_noconvEv
+_ZNSt13basic_filebufIcSt11char_traitsIcEE6xsputnEPKcl
+_ZNSo5writeEPKcl
+atan2f32x
+sincos
+pow
+_ZNK7PhysBAM20DIAGONALIZED_FACE_3DIfE27Isotropic_Stress_DerivativeERKNS_19DIAGONAL_MATRIX_3X3IfEERNS_43DIAGONALIZED_ISOTROPIC_STRESS_DERIVATIVE_3DIfEEi
+_ZN7PhysBAM20DIAGONALIZED_FACE_3DIfE42Update_State_Dependent_Auxiliary_VariablesERKNS_19DIAGONAL_MATRIX_3X3IfEERKNS_10MATRIX_3X3IfEEi
+_ZNK7PhysBAM20LINEAR_INTERPOLATIONIffE16Clamped_To_ArrayERKNS_7GRID_3DIfEERKNS_9ARRAYS_3DIfEERKNS_9VECTOR_3DIfEE
+_ZNK7PhysBAM20DIAGONALIZED_FACE_3DIfE13P_From_StrainERKNS_19DIAGONAL_MATRIX_3X3IfEERKNS_10MATRIX_3X3IfEEfi
+expf64
+_ZNK7PhysBAM13RIGID_BODY_3DIfE32Implicit_Surface_Extended_NormalERKNS_9VECTOR_3DIfEERfii
+_ZNK7PhysBAM25LEVELSET_IMPLICIT_SURFACEIfE12Extended_PhiERKNS_9VECTOR_3DIfEE
+_ZNK7PhysBAM25LEVELSET_IMPLICIT_SURFACEIfE15Extended_NormalERKNS_9VECTOR_3DIfEEi
+#
+--------- TOP 20 LOADS THAT GENERATES MOST CACHE MISSES ---------
+#
+Name = _ZN7PhysBAM16TETRAHEDRON_MESH25Initialize_Neighbor_NodesEv   Address = 574180   Misses = 398
+Name = f64xsubf128   Address = 7f42754d3ee4   Misses = 212
+Name = _ZN7PhysBAM16TETRAHEDRON_MESH32Initialize_Incident_TetrahedronsEv   Address = 57b710   Misses = 169
+Name = .plt.sec   Address = 0   Misses = 165
+Name = _ZN7PhysBAM13TRIANGLE_MESH25Initialize_Neighbor_NodesEv   Address = 5827d0   Misses = 145
+Name = strcmp   Address = 0   Misses = 143
+Name = _ZN7PhysBAM12FACE_EXAMPLEIffE16Get_Initial_DataEv   Address = 42f77c   Misses = 140
+Name = _ZN7PhysBAM29DIAGONALIZED_FINITE_VOLUME_3DIfE37Update_Threading_Auxiliary_StructuresEv   Address = 52ece0   Misses = 130
+Name = _ZN7PhysBAM12SEGMENT_MESH28Initialize_Incident_SegmentsEv   Address = 571c90   Misses = 101
+Name = _ZN7PhysBAM20DIAGONALIZED_FACE_3DIfE21Initialize_Fiber_DataERKNS_17STRAIN_MEASURE_3DIfEERKNS_10LIST_ARRAYINS6_IiEEEERKNS6_INS6_INS_9VECTOR_3DIfEEEEEERKNS6_INS6_IfEEEE   Address = 4e85e0   Misses = 92
+Name = __GI___printf_fp_l   Address = 7f4274cc4634   Misses = 88
+Name = _ZN7PhysBAM29DIAGONALIZED_FINITE_VOLUME_3DIfE34Update_Position_Based_State_HelperElPv   Address = 520510   Misses = 72
+Name = _int_malloc   Address = 7f4274cf4b4e   Misses = 66
+Name = _ZN7PhysBAM24COLLISION_PENALTY_FORCESIfE28Set_Boundary_Only_CollisionsERNS_16TETRAHEDRON_MESHE   Address = 0   Misses = 63
+Name = _ZN7PhysBAM16TETRAHEDRON_MESH24Initialize_Boundary_MeshEv   Address = 57f6e0   Misses = 59
+Name = dl_main   Address = 7f428a1a0024   Misses = 58
+Name = _ZN7PhysBAM20DEFORMABLE_OBJECT_3DIfE33Add_Quasistatic_Diagonalized_FaceERNS_22TETRAHEDRALIZED_VOLUMEIfEERKNS_10LIST_ARRAYINS5_IiEEEERKNS5_INS5_INS_9VECTOR_3DIfEEEEEERKNS5_INS5_IfEEEERSG_PiPKSG_PPNS_34DIAGONALIZED_CONSTITUTIVE_MODEL_3DIfEEffffb   Address = 4ec680   Misses = 56
+Name = _IO_vfprintf   Address = 7f4274cc19e4   Misses = 55
+Name = _dl_relocate_object   Address = 7f428a1935b4   Misses = 53
+Name = do_lookup_x   Address = 7f428a18e300   Misses = 44
+#
+-------- TOP 20 STORES THAT GENERATES MOST CACHE MISSES --------
+#
+Name = _ZN7PhysBAM16TETRAHEDRON_MESH25Initialize_Neighbor_NodesEv   Address = 574180   Misses = 204
+Name = _ZN7PhysBAM12FACE_EXAMPLEIffE16Get_Initial_DataEv   Address = 4319d0   Misses = 183
+Name = _ZN7PhysBAM16TETRAHEDRON_MESH32Initialize_Incident_TetrahedronsEv   Address = 57b710   Misses = 100
+Name = _ZN7PhysBAM29DIAGONALIZED_FINITE_VOLUME_3DIfE37Update_Threading_Auxiliary_StructuresEv   Address = 52ece0   Misses = 78
+Name = _ZN7PhysBAM12SEGMENT_MESH28Initialize_Incident_SegmentsEv   Address = 571c90   Misses = 66
+Name = _ZN7PhysBAM13TRIANGLE_MESH25Initialize_Neighbor_NodesEv   Address = 5827d0   Misses = 64
+Name = _ZN7PhysBAM20DEFORMABLE_OBJECT_3DIfE33Add_Quasistatic_Diagonalized_FaceERNS_22TETRAHEDRALIZED_VOLUMEIfEERKNS_10LIST_ARRAYINS5_IiEEEERKNS5_INS5_INS_9VECTOR_3DIfEEEEEERKNS5_INS5_IfEEEERSG_PiPKSG_PPNS_34DIAGONALIZED_CONSTITUTIVE_MODEL_3DIfEEffffb   Address = 4ec680   Misses = 61
+Name = _ZNSt6locale5_ImplC2Em   Address = 7f42758de3d0   Misses = 60
+Name = _ZN7PhysBAM5ARRAYINS_9VECTOR_3DIfEEE4ReadIfEEvRSi   Address = 42d8c0   Misses = 56
+Name = _ZN7PhysBAM29DIAGONALIZED_FINITE_VOLUME_3DIfE34Update_Position_Based_State_HelperElPv   Address = 520510   Misses = 55
+Name = _ZN7PhysBAM20TRIANGULATED_SURFACEIfE20Update_Triangle_ListERKNS_5ARRAYINS_9VECTOR_3DIfEEEE   Address = 554ff0   Misses = 54
+Name = _ZN7PhysBAM20DIAGONALIZED_FACE_3DIfE21Initialize_Fiber_DataERKNS_17STRAIN_MEASURE_3DIfEERKNS_10LIST_ARRAYINS6_IiEEEERKNS6_INS6_INS_9VECTOR_3DIfEEEEEERKNS6_INS6_IfEEEE   Address = 4e85e0   Misses = 53
+Name = dl_main   Address = 7f428a1a0024   Misses = 41
+Name = _int_malloc   Address = 7f4274cf4b4e   Misses = 38
+Name = _ZN7PhysBAM20STORYTELLING_EXAMPLEIffEC2Ev   Address = 41c060   Misses = 38
+Name = _ZN7PhysBAM17DEFORMABLE_OBJECTIfNS_9VECTOR_3DIfEEE35One_Newton_Step_Toward_Steady_StateEfifRNS_5ARRAYIS2_EEbPib   Address = 4cb620   Misses = 37
+Name = main   Address = 403f20   Misses = 33
+Name = _ZN7PhysBAM10LIST_ARRAYINS_10MATRIX_3X3IfEEE12Resize_ArrayEibb.constprop.157   Address = 512c60   Misses = 33
+Name = _ZN7PhysBAM20STORYTELLING_EXAMPLEIffE17Initialize_BodiesEv   Address = 43a1bf   Misses = 33
+Name = _ZN7PhysBAM9LOG_SCOPE12Get_New_ItemERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE   Address = 632810   Misses = 33
+#
+# DCACHE stats
+#
+# L1 Data Cache:
+# Load-Hits:           8007927118  97.08%
+# Load-Misses:          240769003   2.92%
+# Load-Accesses:       8248696121 100.00%
+# 
+# Store-Hits:          3510368148  98.36%
+# Store-Misses:          58519185   1.64%
+# Store-Accesses:      3568887333 100.00%
+# 
+# Total-Hits:         11518295266  97.47%
+# Total-Misses:         299288188   2.53%
+# Total-Accesses:     11817583454 100.00%
+
